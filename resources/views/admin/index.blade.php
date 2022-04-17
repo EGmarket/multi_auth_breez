@@ -2,10 +2,12 @@
 @section('admin')
 <div class="content_wrapper">
     <!--middle content wrapper-->
+    <h3 class="ml-4 mt-5">Admin: {{ Auth::guard('admin')->user()->name }}</h3>
     <div class="middle_content_wrapper">
         <!-- counter_area -->
         <section class="counter_area">
             <div class="row">
+
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter">
                         <div class="counter_item">

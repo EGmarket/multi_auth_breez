@@ -46,17 +46,17 @@
                         </button>
                     </div>
                 @endif
-                <form action=" " class="d-block" method="post">
-
+                <form action="{{ route('admin.login') }} " class="d-block" method="post">
+                    @csrf
                     <div class="form-group icon_parent">
                         <label for="password">Email</label>
-                        <input id="email" type="email" class="form-control"  name="email" value=" " required autocomplete="email" autofocus placeholder="Email Address">
+                        <input  type="email" class="form-control"  name="email" value=" " required autocomplete="email" autofocus placeholder="Email Address">
                         <span class="icon_soon_bottom_right"><i class="fas fa-envelope"></i></span>
 
                     </div>
                     <div class="form-group icon_parent">
                         <label for="password">Password</label>
-                        <input id="password" type="password" class="form-control"   name="password" required autocomplete="current-password" placeholder="Password">
+                        <input  type="password" class="form-control"   name="password" required autocomplete="current-password" placeholder="Password">
 
                         <span class="icon_soon_bottom_right"><i class="fas fa-unlock"></i></span>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </form>
                 <div class="footer">
-                    <p>Copyright &copy; 2020 <a href="https://easylearningbd.com/">easy Learning</a>. All rights reserved.</p>
+                    <p>Copyright &copy; 2022 <a >aSquare</a>. All rights reserved.</p>
                 </div>
 
             </div>
