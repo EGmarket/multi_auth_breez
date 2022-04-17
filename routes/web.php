@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function (){
     Route::get('/login',[AdminController::class,'Index'])->name('login_form');
-    Route::get('/login/owner',[AdminController::class,'AdminLogin'])->name('admin.login');
-    Route::get('/dashboard',[AdminController::class,'AdminDashboard'])->name('admin.dashboard');
+    Route::post('/login/owner',[AdminController::class,'AdminLogin'])->name('admin.login');
+    Route::get('/dashboard',[AdminController::class,'AdminDashboard'])->name('admin.dashboard')->middleware('admin');
 });
 
 /* Admin Route End */
